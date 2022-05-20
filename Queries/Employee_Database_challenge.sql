@@ -11,7 +11,7 @@ FROM employees AS e
 INNER JOIN titles AS title
 ON (e.emp_no = title.emp_no)
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
-AND (rt.to_date = '9999-01-01')
+AND (title.to_date = '9999-01-01')
 ORDER BY emp_no;
 
 -- Unique Titles table that contains the employee number, first and last name, and most recent title
